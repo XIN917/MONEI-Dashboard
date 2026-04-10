@@ -13,6 +13,9 @@ node_modules/
 dist/
 build/
 
+# Docs
+docs/
+
 # IDE
 .idea/
 .vscode/
