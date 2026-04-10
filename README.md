@@ -61,8 +61,8 @@ src/
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
-   cd monei-payment-dashboard
+   git clone https://github.com/XIN917/MONEI-Dashboard.git
+   cd MONEI-Dashboard
    ```
 
 2. Install dependencies:
@@ -70,13 +70,19 @@ src/
    npm install
    ```
 
-3. Create a `.env.local` file with your API key:
+3. Create the `.env` file from the example template:
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Open `.env` and replace the placeholder with your actual MONEI API key:
    ```env
    VITE_API_KEY=your_api_key_here
    ```
-   See `.env.example` for reference. The `.env.local` file is gitignored.
 
-4. Start the development server:
+   > **Important:** You must manually enter your own API key. The `.env.example` file only contains a placeholder value. Do not commit your `.env` file — it is ignored by git.
+
+5. Start the development server:
    ```bash
    npm run dev
    ```
